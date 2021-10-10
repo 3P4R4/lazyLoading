@@ -29,6 +29,7 @@ const crearNodo = () => {
 
 
 
+
 // Agregando funciones al botón
 const boton = document.querySelector('button');
 const accion = () => {
