@@ -24,10 +24,8 @@ npm start
 ### npm start
 
 Corremos nuestro codigo en el navegador.
-Open http://localhost:8080 to view it in the browser.
+Open http://localhost:8080 para verlo en el navegador.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
 ### Caracteristica extra
 
