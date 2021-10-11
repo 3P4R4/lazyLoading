@@ -1,82 +1,34 @@
-# Snowpack Tailwind
+# Proyecto de Carga Perezosa o Lazy Load
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+> ✨ Curso Platzi
 
-Ready-to-go template to create awesome websites using Tailwind on top of Snowpack and autopublish to GitHub pages using GitHub Actions.
+Demostraci[on y manipulación del DOM con JS y desplegado en Netlify
 
-- [Quick start](#quick-start)
-- [Features](#features)
-- [Available Scripts](#available-scripts)
+- [Netlify](https://mendozalz-lazy-load.netlify.app/)
 
-## Quick start
+
+## Inicio rapido
 
 ```sh
-# Bootstrap the template into a new folder called `my-app`
+# Descargamos el repositorio y cambiamos la palabra `my-app` por el nombre que le quieras dar. Solo debemos pegar la linea de codigo siguiente en nuestro terminal
 npx create-snowpack-app my-app --template snowpack-template-tailwind
 
-# Enable Prettier on git-commit
-cd my-app
-npm run install:husky
+# Al decargar el template solo debemos deguir los pasos siguientes para navegar  a nuestra carpeta creada.
+cd my-app ##Mi carpeta creada y personalizada.
+npm run install:husky ##Ejecutamos el codigo para las dependencias.
 
-# Start the development server
+# Y para iniciar el template descargado solo debemos teclear:
 npm start
 ```
 
-✨ Optional: [Enable autopublish](#q-how-do-i-enable-auto-publish-to-github-pages) to get your site deployed on GitHub Pages on every commit you push.
-
-#### Optional install using Yarn:
-
-```sh
-# Bootstrap the template into a new folder called `my-app`
-npx create-snowpack-app my-app --template snowpack-template-tailwind --use-yarn
-
-# Enable Prettier on git-commit
-cd my-app
-yarn install:husky
-```
-
-## Features
-
-- Snowpack, of course.
-- Tailwind.
-- Prettier.
-- Force prettier on git-commit.
-- Autopublish on Github Pages.
-
-### Q: How do I enable auto publish to GitHub Pages?
-
-1. Update the value of `homepage` in `package.json`. It should look like `https://<your-username>.github.io/<your-repo-name>` (no trailing slash).
-1. Push your changes into a new GitHub repository.
-1. You should see an Action running on `https://github.com/<your-username>/<repo-name>/actions`
-1. Make sure to [enable GitHub pages for your repo](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) and select the `gh-pages` branch
-1. Give GH Pages some minutes, your site should be live on `https://<your-username>.github.io/<your-repo-name>`
-1. Enjoy :)
-
-### Q: How do I disable auto publish to GitHub Pages?
-
-Remove the `.github/workflows/publish.yml` file.
-
-### Q: How do I check my code syntax (Prettier) on git-commit?
-
-Run `npm run install:husky`.
-
-## Available Scripts
-
 ### npm start
 
-Runs the app in the development mode.
+Corremos nuestro codigo en el navegador.
 Open http://localhost:8080 to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### npm run build
+### Caracteristica extra
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+En la devTools de chrome puedes verificar en la consola como el registro de imagenes tanto cargadas como vistas son identificadas por color.

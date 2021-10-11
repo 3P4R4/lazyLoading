@@ -35,7 +35,8 @@ const accion = () => {
     const target = crearNodo();
     agregar.append(target);
     registerImage(target);
-    console.log("Imagen Cargada");
+    console.log('%c Imagen Cargada ', 'background: green; color: white');
+
 
 }
 boton.addEventListener('click', accion);
