@@ -45,8 +45,8 @@ const agregar = document.getElementById('contenedor')
 const botonEliminar = document.querySelector('#reinicio');
 const remover = () => {
     const imagenes = document.querySelectorAll('img');
-    imagenes.forEach(i => {
-        i.remove();
+    imagenes.forEach(imagen => {
+        imagen.remove();
     });
 }
 botonEliminar.addEventListener('click', remover);
