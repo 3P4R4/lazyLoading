@@ -27,17 +27,26 @@ const crearNodo = () => {
     return container;
 }
 
-
-
-
 // Agregando funciones al botón
 const boton = document.querySelector('button');
+
+
 const accion = () => {
     const target = crearNodo();
     agregar.append(target);
     registerImage(target);
+    console.log("Imagen Cargada");
 
 }
 boton.addEventListener('click', accion);
 
 const agregar = document.getElementById('contenedor')
+    // Agregando boton de eliminar imagenes
+const botonEliminar = document.querySelector('#reinicio');
+const remover = () => {
+    const imagenes = document.querySelectorAll('img');
+    imagenes.forEach(imagen => {
+        imagen.remove();
+    });
+}
+botonEliminar.addEventListener('click', remover);
