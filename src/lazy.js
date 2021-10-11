@@ -7,7 +7,7 @@ const loadImage = (entry) => {
     const imagen = container.firstChild;
     const url = imagen.dataset.src;
     imagen.src = url;
-
+    console.log("Imagen Visualizada");
     observer.unobserve(container);
 };
 
